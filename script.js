@@ -9,7 +9,7 @@ function getJokes(e){
 
 	const xhr = new XMLHttpRequest();
 
-	xhr.open('GET',`http://api.icndb.com/jokes/random/${number}`,true);
+	xhr.open('GET',`https://api.icndb.com/jokes/random/${number}`,true);
 
 	xhr.onreadystatechange = function(){
 		if(this.status === 200 && this.readyState === 4){
